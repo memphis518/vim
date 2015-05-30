@@ -13,3 +13,9 @@
 * vim-fugitive		
 * vim-rails
 * pathogen.vim
+
+
+### Requirements
+
+* JSCS (https://github.com/jscs-dev/node-jscs)
+* Rubocop (https://github.com/bbatsov/rubocop)
