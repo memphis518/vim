@@ -1,6 +1,7 @@
 # Vim Setup
 
 ### Plugins
+pathogen.vim
 base16-vim		
 syntastic		
 vim-autoclose		
