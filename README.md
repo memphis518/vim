@@ -1,7 +1,6 @@
 # Vim Setup
 
 ### Plugins
-*pathogen.vim
 
 *base16-vim		
 *syntastic		
@@ -13,3 +12,4 @@
 *vim-bundler		
 *vim-fugitive		
 *vim-rails
+*pathogen.vim
