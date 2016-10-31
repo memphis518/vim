@@ -13,8 +13,12 @@ set expandtab ts=4 sw=4 ai
 
 set bg=dark
 if has("gui_running")
+    set guifont=Inconsolata\ for\ Powerline:h12
+    let g:airline_powerline_fonts=1
     colorscheme base16-railscasts
 else
+    let g:airline_left_sep=''
+    let g:airline_right_sep=''
     colorscheme slate
 endif
 
@@ -26,8 +30,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+set guifont=Inconsolata\ for\ Powerline:h12
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
