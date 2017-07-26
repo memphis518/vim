@@ -1,17 +1,21 @@
 # Vim Setup
 
 ### Plugins
-
-* base16-vim		
+* YouCompleteMe		
+* ctrlp.vim		
 * syntastic		
-* vim-autoclose		
+* vim-airline-themes	
 * vim-endwise		
-* vim-javascript-syntax
+* vim-javascript-syntax	
+* vim-rbenv		
+* vim-tags
+* base16-vim		
 * nerdtree		
 * vim-airline		
 * vim-bundler		
 * vim-fugitive		
-* vim-rails
+* vim-rails		
+* vim-ruby
 * pathogen.vim
 
 
@@ -19,3 +23,4 @@
 
 * JSCS (https://github.com/jscs-dev/node-jscs)
 * Rubocop (https://github.com/bbatsov/rubocop)
+* ctags
