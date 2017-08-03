@@ -1,0 +1,63 @@
+syntax on
+set number
+set mouse=a
+set title
+set backspace=2
+set clipboard=unnamed
+filetype plugin on
+filetype plugin indent on
+set autoindent
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab ts=2 sw=2 ai
+set visualbell 
+set t_vb=
+
+set bg=dark
+execute pathogen#infect()
+let g:airline_powerline_fonts=1
+
+set background=dark
+colorscheme Tomorrow-Night
+highlight clear SignColumn
+
+autocmd vimenter * if !argc() | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{fugitive#statusline()}
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*i
+
+let g:airline#extensions#whitespace#enabled = 0
+set guifont=Inconsolata\ for\ Powerline:h12
+
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_echo_current_error = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_ruby_rubocop_exec = '/Users/swatters/.rbenv/shims/rubocop'
+let g:syntastic_html_checkers = []
+let g:syntastic_error_symbol = '>>'
+let g:syntastic_warning_symbol = '>>'
+let g:syntastic_style_error_symbol = '>>'
+let g:syntastic_style_warning_symbol = '>>'
+hi SpellBad ctermbg=NONE guibg=NONE
+hi SpellCap ctermbg=NONE guibg=NONE
+
+set colorcolumn=120
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+let mapleader="\<SPACE>"
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+let test#strategy = "neovim"
+let test#ruby#rspec#options = '--color --format documentation'
