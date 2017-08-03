@@ -1,4 +1,4 @@
-# Vim Setup
+# NeoVim/Vim Setup
 
 ### Plugins
 * YouCompleteMe		
@@ -17,10 +17,22 @@
 * vim-rails		
 * vim-ruby
 * pathogen.vim
-
+* vim-test/
+* YouCompleteMe/
 
 ### Requirements
-
-* JSCS (https://github.com/jscs-dev/node-jscs)
-* Rubocop (https://github.com/bbatsov/rubocop)
+* neovim
 * ctags
+
+## Node
+* eslint
+
+### Colors
+* Tomorrow-Night
+
+### Gems (NeoVim Only)
+neovim
+rubocop
+
+### Python Support (NeoVim Only)
+pip install neovim
