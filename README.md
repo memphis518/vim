@@ -19,6 +19,7 @@
 * pathogen.vim
 * vim-test/
 * YouCompleteMe/
+* LessSpace
 
 ### Requirements
 * neovim
