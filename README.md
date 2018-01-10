@@ -1,7 +1,9 @@
 # NeoVim/Vim Setup
 
 ### Plugins
-* YouCompleteMe		
+* YouCompleteMe
+* asyncrun.vim
+* vim-dispatch
 * ctrlp.vim		
 * syntastic		
 * vim-airline-themes	
@@ -18,8 +20,8 @@
 * vim-ruby
 * pathogen.vim
 * vim-test/
-* YouCompleteMe/
 * LessSpace
+* vim-grepper
 
 ### Requirements
 * neovim
