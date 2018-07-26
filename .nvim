@@ -1,3 +1,25 @@
+call plug#begin('~/.vim/plugged')
+  Plug 'skywind3000/asyncrun.vim'
+  Plug 'tpope/vim-dispatch'
+  Plug 'kien/ctrlp.vim'
+  Plug 'vim-syntastic/syntastic'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'tpope/vim-endwise'
+  Plug 'jelera/vim-javascript-syntax'
+  Plug 'tpope/vim-rbenv'
+  Plug 'szw/vim-tags'
+  Plug 'chriskempson/base16-vim'
+  Plug 'scrooloose/nerdtree'
+  Plug 'vim-airline/vim-airline'
+  Plug 'tpope/vim-bundler'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rails'
+  Plug 'tpope/vim-rails'
+  Plug 'janko-m/vim-test'
+  Plug 'thirtythreeforty/lessspace.vim'
+  Plug 'mhinz/vim-grepper'
+call plug#end()
+
 syntax on
 set number
 set mouse=a
@@ -16,7 +38,6 @@ set t_vb=
 let mapleader="\<SPACE>"
 
 set bg=dark
-execute pathogen#infect()
 let g:airline_powerline_fonts=1
 
 set background=dark
